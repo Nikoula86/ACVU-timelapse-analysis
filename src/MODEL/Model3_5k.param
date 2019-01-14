@@ -1,0 +1,60 @@
+# model 3 - basic model, low(mothers)-high(daughters) LAG-2 protein degradation
+
+propensity_function:	basic
+
+# fitted rates for lag-2 expression mother cells # k0_m=fO, k1_m=bO, v0_m=fM, d0=bM
+k0_m:	0.033
+k1_m:	0.051
+v0_m:	3.987
+# fitted rates for lag-2 expression in daughter cells
+k0_d:	0.418
+k1_d:	0.435
+v0_d:	6.320
+# lag-2 mRNA degradation rate, from Van Zon et al., Nature Comm
+d0:	0.087
+
+## these paramaters can be changed
+# HLH-2 binding to operator
+fOH:	1000
+bOH:	100
+# HLH-2 production/degradation
+KH:	10
+# Inhibition of HLH-2 by Notch
+K:	100
+n:	2.
+# ratio of spontaneous and Notch-mediated HLH-2 degradation
+beta:	5.e4
+# lag-2 protein production/degradation in mothers
+fD_m:	0.1666
+bD_m:	0.01666
+# lag-2 protein production/degradation in daughters
+fD_d:	0.8
+bD_d:	0.08
+
+## YFP DYNAMICS
+# HLH-2 binding to lag2:yfp operator
+fOYH:	1000
+bOYH:	100
+# yfp mrna production/degrdation rates in mothers
+fMY_m:	3.987
+bMY_m:	0.087
+# yfp mrna production/degrdation rates in daughters
+fMY_d:	6.320
+bMY_d:	0.087
+# yfp protein production/degradation in mothers
+fDY_m:	0.1666
+bDY_m:	0.001666
+# yfp protein production/degradation in daughters
+fDY_d:	0.1666
+bDY_d:	0.001666
+
+# Notch signaling strength in mothers
+phi_m:	0
+# Notch signaling strength in daughters
+phi_d:	1
+
+T0:	120.
+T1:	600.
+DT:	10.
+
+DT_out:	1.0

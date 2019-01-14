@@ -1,0 +1,7 @@
+M0: M&D Notch, *NO YFP*
+M1: D Notch, *NO YFP*, const LAG2 deg
+M2: D Notch, *YFP*, NotchDep LAG2 Deg
+M3: D Notch, *YFP*, low(M)-high(D) LAG2 Deg
+M4: DD Notch, *YFP*, const LAG2 deg
+M5: M2, *NO BURSTS*
+M6: M3, *NO BURSTS*
